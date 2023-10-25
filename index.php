@@ -7,10 +7,30 @@
 
     <head>
         <title>Homepage</title>
+
+        <style>
+            table {
+                box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+            }
+            table tr th {
+                background-color: rgba(266, 125, 4 , 1);
+            }
+            .link {
+                text-decoration: none;
+                color: black;
+                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                word-spacing: 2px;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        </style>
     </head>
 
     <body>
-        <a href="add.php">Add Penjual Baru</a><br /><br />
+        <a class="link" href="add.php">Add Penjual Baru</a><br /><br />
 
         <table width='100%' border=1>
 
