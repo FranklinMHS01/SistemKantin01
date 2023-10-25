@@ -19,7 +19,7 @@
         <table width="100%" border=2>
             <tr>
                 <th>Nama Penjual</th>
-                <th>Nama</th>
+                <th>Nama Makanan</th>
                 <th>Jenis</th>
                 <th>Harga</th>
                 <th>Update</th>

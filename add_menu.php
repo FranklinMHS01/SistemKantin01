@@ -9,10 +9,10 @@
         <a href="index.php">Go to Home</a>
         <br /><br />
 
-        <form action="/menu/add_menu.php" method="post" name="form1">
+        <form action="add_menu.php" method="post" name="form1">
             <table width="25%" border="0">
                 <tr>
-                    <td>Nama</td>
+                    <td>Nama Makanan</td>
                     <td><input type="text" name="name"></td>
                 </tr>
                 <tr>
