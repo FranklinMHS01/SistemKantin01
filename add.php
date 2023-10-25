@@ -88,7 +88,7 @@
 
                 $result = mysqli_query($mysqli, "INSERT INTO tb_penjual(id_penjual,nama,no_handphone,alamat) VALUES(null,'$nama',$handphone,'$alamat')");
 
-                echo "<script>alert('Penjual Berhasil Ditambahkan');</script> <a href='index.php'>View Penjual</a>";
+                echo "<script>alert('Penjual Berhasil Ditambahkan'); window.location.href = 'index.php'</script>";
             }
             ?>
         </div>
