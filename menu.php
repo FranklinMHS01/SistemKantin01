@@ -13,9 +13,11 @@
             table {
                 box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
             }
+
             table tr th {
                 background-color: rgba(266, 125, 240);
             }
+
             .link {
                 text-decoration: none;
                 color: black;
@@ -23,8 +25,27 @@
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 word-spacing: 2px;
             }
+
             a {
                 text-decoration: none;
+            }
+
+            .edit {
+                text-decoration: none;
+                background-color: blue;
+                color: white;
+                padding: 2px;
+                border-radius: 5px;
+                margin: 5px;
+            }
+
+            .delete {
+                text-decoration: none;
+                background-color: red;
+                color: white;
+                padding: 2px;
+                border-radius: 5px;
+                margin: 5px;
             }
         </style>
     </head>
@@ -59,8 +80,8 @@
                         <?= number_format($user_data['harga'], 2, ',', '.') ?>
                     </td>
 
-                    <td><a href="edit_menu.php?id=<?= $user_data['id_menu'] ?>">Edit</a> | <a
-                            href="delete_menu.php?id=<?= $user_data['id_menu'] ?>">Delete</a></td>
+                    <td><a class="edit" href="edit_menu.php?id=<?= $user_data['id_menu'] ?>">Edit</a> | <a
+                           class="delete" href="delete_menu.php?id=<?= $user_data['id_menu'] ?>">Delete</a></td>
                 </tr>
 
             <?php } ?>

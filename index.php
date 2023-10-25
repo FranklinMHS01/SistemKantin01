@@ -12,9 +12,11 @@
             table {
                 box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
             }
+
             table tr th {
-                background-color: rgba(266, 125, 4 , 1);
+                background-color: rgba(266, 125, 4, 1);
             }
+
             .link {
                 text-decoration: none;
                 color: black;
@@ -22,8 +24,27 @@
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 word-spacing: 2px;
             }
+
             a {
                 text-decoration: none;
+            }
+
+            .edit {
+                text-decoration: none;
+                background-color: blue;
+                color: white;
+                padding: 2px;
+                border-radius: 5px;
+                margin: 5px;
+            }
+
+            .delete {
+                text-decoration: none;
+                background-color: red;
+                color: white;
+                padding: 2px;
+                border-radius: 5px;
+                margin: 5px;
             }
         </style>
     </head>
@@ -48,7 +69,7 @@
                 echo "<td>" . $user_data['no_handphone'] . "</td>";
                 echo "<td>" . $user_data['alamat'] . "</td>";
                 echo "<td> <a href='menu.php?$user_data[id_penjual]'> Menu </a>";
-                echo "<td><a href='edit.php?id=$user_data[id_penjual]'>Edit</a> | <a href='delete.php?id=$user_data[id_penjual]'>Delete</a></td></tr>";
+                echo "<td><a class='edit' href='edit.php?id=$user_data[id_penjual]'>Edit</a> | <a class='delete' href='delete.php?id=$user_data[id_penjual]'>Delete</a></td></tr>";
             }
             ?>
         </table>
