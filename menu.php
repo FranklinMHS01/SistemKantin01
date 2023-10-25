@@ -11,10 +11,10 @@
         <title>List Menu</title>
         <style>
             table {
-                box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+                box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
             }
             table tr th {
-                background-color: rgba(266, 125, 4 , 1);
+                background-color: rgba(266, 125, 240);
             }
             .link {
                 text-decoration: none;
@@ -25,7 +25,6 @@
             }
             a {
                 text-decoration: none;
-                color: black;
             }
         </style>
     </head>
