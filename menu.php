@@ -2,7 +2,10 @@
     <?php
     include_once("config_kantin.php");
 
-    $result = mysqli_query($mysqli, "SELECT * FROM tb_menu a join tb_penjual b on b.id_penjual = a.id_penjual ORDER BY id_menu DESC")
+    $id = $_GET['id'];
+
+    $result = mysqli_query($mysqli, "SELECT * FROM tb_menu WHERE id_penjual=$id");
+    $quary = mysqli_query( $mysqli,"SELECT * FROM tb_penjual WHERE id_penjual=$id");
         ?>
 
     <html>
@@ -55,9 +58,14 @@
 
         <a class="link" href="add_menu.php">Add Menu Baru</a><br /><br />
 
+        <?php 
+        $user_data = mysqli_fetch_array($quary)
+        ?>
+
+        <h3 class="nama">Nama | <?= $user_data['nama'] ?></h3>
+
         <table width="100%" border=2>
             <tr>
-                <th>Nama Penjual</th>
                 <th>Nama Makanan</th>
                 <th>Jenis</th>
                 <th>Harga</th>
@@ -67,9 +75,6 @@
             while ($user_data = mysqli_fetch_array($result)) {
                 ?>
                 <tr>
-                    <td>
-                        <?= $user_data['nama'] ?>
-                    </td>
                     <td>
                         <?= $user_data['nama_menu'] ?>
                     </td>

@@ -68,7 +68,7 @@
                 echo "<td>" . $user_data['nama'] . "</td>";
                 echo "<td>" . $user_data['no_handphone'] . "</td>";
                 echo "<td>" . $user_data['alamat'] . "</td>";
-                echo "<td> <a href='menu.php?$user_data[id_penjual]'> Menu </a>";
+                echo "<td> <a href='menu.php?id=$user_data[id_penjual]'> Menu </a>";
                 echo "<td><a class='edit' href='edit.php?id=$user_data[id_penjual]'>Edit</a> | <a class='delete' href='delete.php?id=$user_data[id_penjual]'>Delete</a></td></tr>";
             }
             ?>

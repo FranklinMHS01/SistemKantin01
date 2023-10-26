@@ -105,7 +105,7 @@
 
                 $result = mysqli_query($mysqli, "INSERT INTO tb_menu(id_menu,nama_menu,jenis,harga,id_penjual) VALUES(null,'$nama','$jenis','$harga','$penjual')");
 
-                echo "<script>alert('Menu Berhasil Ditambahkan');</script> <a href='menu.php'>View Menu</a>";
+                echo "<script>alert('Menu Berhasil Ditambahkan'); window.location.href = 'index.php'</script>";
             }
             ?>
         </div>
