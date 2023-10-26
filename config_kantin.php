@@ -1,7 +1,7 @@
 <?php 
 
 $databaseHost = 'localhost';
-$databaseName = 'db_kantin1';
+$databaseName = 'db_kantin';
 $databaseUsername = 'root';
 $databasePassword = '';
 
